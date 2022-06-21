@@ -1,0 +1,21 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+  @include gradient;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0.5rem 0.7rem;
+  color: $white;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .navbar-expand-lg .navbar-nav .nav-link:last-child {
+    margin-bottom: 1.15rem;
+  }
+  
+}
